@@ -118,7 +118,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
         productExists.amount = amount; // Se o produto existe, productExists.amount recebe amount.
         setCart(updatedCart); // Depois tenho que perpetuar o updateCart no carrinho.
         localStorage.setItem('@RocketShoes:cart', JSON.stringify(updatedCart)) // E dar o setItem com o valor atualizado.
-      } else { // Agora se ele não encontrar esse produto no carrinho, 
+      } else { // Agora se ele não encontrar esse produto no carrinho, ai agente tem um problema. Como eu quero incrementar um produto no carrinho, sendo que ele nem existe? Porque aquele "addproduct" eu estou cliclando em um produto la na pagina home, que ele pode estar com zero, então faz sentido ele não existir; e se ele não existir eu adiciono esse produto. Porém, essa função aqui é somente para o update, então nao faz sentido ele não existir no carrinho, ele tem que existir. Então se ele não existe, agente da um throw "error", pra ele mostrar a menssagem geral do catch "Erro na alteração de quantidade do produto".
         throw Error();
       }
     } catch {
