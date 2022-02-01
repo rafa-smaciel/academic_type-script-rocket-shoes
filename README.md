@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="" title="typescript fundamentals" src=".github/demonstration_aplication.png" width="120px" />
+  <img alt="" title="typescript fundamentals" src=".github/demostration_aplication.png" width="320px" />
   <br>
   RocketShoes - Optimized Shopping Cart 
 </h1>
