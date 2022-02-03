@@ -30,12 +30,13 @@ This project was developed with the following technologies:
 <br>
 
 ## ⚙ Commands Running locally Client
+- yarn
 - yarn start
 
 ## ⚙ Commands Running locally Server
 - yarn server
 
-## ⚙ Documentatios
+## ⚙ Documentation
 - <a href=".github/Documentation.pdf">PDF</a>
 - [RocketSeat](https://www.notion.so/Desafio-01-Criando-um-hook-de-carrinho-de-compras-5769216778794019a83f544e79167b12)
 <br>
